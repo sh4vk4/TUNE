@@ -1,0 +1,119 @@
+<!--сделано тимофеем ровенским (@ingxube/@g4vk4 в вк)-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Зарегистрироваться - TUNE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="content">
+        <div class="signup">
+            <a href="../index.html" class="logo2"></a>
+            <h1>Зарегистрируйтесь и слушайте бесплатно</h1>
+            <a href="#" class="faceb">Зарегистрироваться через Facebook</a>
+
+            <div class="line">
+                <hr>или
+                <hr>
+            </div>
+
+            <form action="POST">
+                <h3>Укажите электронную почту и пароль</h3>
+
+                <div class="group1">
+                    <label for="email">Введите адрес электронной почты</label><br>
+                    <input type="text" id="email" placeholder="Введите адрес электронной почты" autocomplete="off">
+                </div>
+
+                <div class="group1">
+                    <label for="email2">Подтвердите адрес электронной почты</label>
+                    <input type="text" id="email2" placeholder="Подтвердите адрес электронной почты" autocomplete="off">
+                </div>
+
+                <div class="group1">
+                    <label for="pass">Придумайте пароль</label>
+                    <input type="text" id="pass" placeholder="Придумайте пароль " autocomplete="off">
+                </div>
+
+                <div class="group1">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Укажите ваше имя " autocomplete="off">
+                    <p class="name">Оно появится в вашем профиле.</p>
+                </div>
+
+                <div class="group2">
+                    <h4>Ваша дата рождения</h4>
+                    <div class="field1">
+                        <label for="day">День</label>
+                        <input type="text" maxlength="2" id="day" placeholder="ДД" autocomplete="off">
+                    </div>
+
+                    <div class="field1">
+                        <label for="month">Месяц</label>
+                        <select id="month">
+                        <option selected disabled value>Месяц</option>
+					      <option value="1">Январь</option>
+					      <option value="2">Февраль</option>
+					      <option value="3">Март</option>
+                          <option value="4">Апрель</option>
+                          <option value="5">Май</option>
+                          <option value="6">Июнь</option>
+                          <option value="7">Июль</option>
+                          <option value="8">Август</option>
+                          <option value="9">Сентябрь</option>
+                          <option value="10">Октябрь</option>
+                          <option value="11">Ноябрь</option>
+                          <option value="12">Декабрь</option>
+					    </select>
+                    </div>
+
+                    <div class="field1">
+                        <label for="year">Год</label>
+                        <input type="text" maxlength="4" id="year" placeholder="ГГГГ" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="group3">
+                    <h4>Укажите свой гендер</h4>
+                    <div class="field2">
+                        <div class="gender">
+                            <input type="radio" id="m" name="gender"><label for="m">Мужской</label>
+                        </div>
+
+                        <div class="gender">
+                            <input type="radio" id="f" name="gender"><label for="f">Женский</label>
+                        </div>
+
+                        <div class="gender">
+                            <input type="radio" id="x" name="gender"><label for="x">Другой</label>
+                        </div>
+                    </div>
+
+                    <div class="field3">
+                        <input type="checkbox" id="adds"><label for="adds">Я хочу получать новости и предложения от TUNE.</label>
+                    </div>
+
+                    <div class="field3">
+                        <input type="checkbox" id="data"><label for="data">Я разрешаю сообщить мои регистрационные данные партнерам TUNE в целях рекламы.</label>
+                    </div>
+
+                    <div class="field3">
+                        <input type="checkbox" id="terms"><label for="terms">Я принимаю <a href="# ">Условия использования</a> и <a href="# ">Политику конфиденциальности</a> TUNE.</label>
+                    </div>
+                </div>
+
+                <div class="group4">
+                    <button type="submit" class="reg">Зарегистрироваться</button>
+                    <p>Уже есть аккаунт? <a href="login.html ">Войти</a>.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,885 @@
+/*сделано тимофеем ровенским (@ingxube/@g4vk4 в вк)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: "Century Gothic";
+}
+
+
+/*---------------------------------------стиль скроллбара---------------------------------------*/
+
+
+/* ширина скроллбара */
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+
+/* цвет скроллбара */
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(119, 168, 194);
+}
+
+
+/* цвет фона скроллбара */
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+
+/* контент сайта ваще полностью */
+
+.content {
+    width: 100%;
+}
+
+
+/* вертикальная линия между ссылками в меню */
+
+#menu {
+    font-weight: bold;
+    color: white;
+    font-size: 15pt;
+    margin-top: 25px;
+}
+
+
+/*---------------------------------------меню---------------------------------------*/
+
+
+/* стиль для меню */
+
+#navigation-container {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+
+/* стиль списка */
+
+#navigation-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 125px;
+}
+
+
+/* стиль всех ссылок */
+
+a {
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+
+/* стиль ссылок в меню */
+
+.menu {
+    color: black;
+    font-weight: bold;
+    color: white;
+    padding: 20px 25px;
+    font-size: 15pt;
+}
+
+.menu:hover {
+    color: rgb(119, 168, 194);
+}
+
+
+/* горизонтальное выравнивание списка */
+
+#navigation-container li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* стиль логотипа */
+
+.logo {
+    width: 115px;
+    height: 50px;
+    margin-top: 12px;
+    margin-left: 125px;
+    background: url("../images/logo.png");
+    background-size: cover;
+}
+
+.logo:hover {
+    background: url("../images/logo1.png");
+    background-size: cover;
+}
+
+
+/*---------------------------------------главная страница и страница скачки---------------------------------------*/
+
+
+/* стиль баннера */
+
+.banner {
+    display: block;
+    position: relative;
+    background: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* стиль заголовков и кнопки баннера */
+
+.banner>h1,
+.banner>h3,
+.bttn {
+    position: relative;
+    top: 24%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    width: 800px;
+}
+
+
+/* отдельный стиль для заголовка 1 */
+
+.banner>h1 {
+    font-size: 80pt;
+}
+
+
+/* отдельный стиль для заголовка 3 */
+
+.banner>h3 {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* стиль кнопки скачать */
+
+.bttn {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 25pt;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+}
+
+
+/* увеличивание при наведении курсора */
+
+.bttn:hover {
+    color: rgb(119, 168, 194);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* стиль баннера на странице download */
+
+.banner1 {
+    display: block;
+    position: relative;
+    background: rgb(255, 213, 88);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* стиль заголовков и кнопки баннера на странице download */
+
+.banner1>h1,
+.banner1>h3,
+.bttn1,
+.banner1>img {
+    position: relative;
+    top: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    width: 800px;
+}
+
+.bttn1 {
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 15pt;
+    padding: 10px;
+    width: 130px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+}
+
+
+/* увеличивание при наведении курсора */
+
+.bttn1:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.banner1>h1 {
+    font-size: 40pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner1>h3 {
+    width: 420px;
+    font-size: 15pt;
+    font-weight: lighter;
+}
+
+
+/* картинка ноута на странице download */
+
+.banner1>img {
+    width: 120px;
+}
+
+
+/* блок с ссылками на скачку на странице download ig */
+
+.download {
+    text-align: center;
+    padding: 50px;
+    background: rgb(255, 255, 255);
+}
+
+
+/* отступ элементов второго блока на странице download */
+
+.download h2,
+.download>p,
+.download img {
+    margin: 15px;
+}
+
+
+/* стиль блока с устройствами на странице download */
+
+.alldevices {
+    padding: 50px;
+    text-align: center;
+    background: rgb(40, 40, 40);
+}
+
+
+/* стиль заголовка в блоке с устройствами на странице download */
+
+.alldevices h1 {
+    color: white;
+}
+
+
+/* стиль картинки с устройствами на странице download */
+
+.alldevices img {
+    width: 500px;
+}
+
+
+/* стиль списка на странице download */
+
+.alldevices ul {
+    margin-top: 50px;
+    padding: 4px;
+    list-style-type: disc;
+}
+
+.alldevices li {
+    display: inline;
+    padding: 3px;
+    color: white;
+}
+
+
+/* стиль ссылок в блоке с устройствами download */
+
+.alldevices a {
+    color: rgb(255, 213, 88);
+    text-decoration: underline;
+}
+
+.alldevices a:hover {
+    color: rgb(255, 226, 140);
+}
+
+
+/* стиль футера */
+
+.dot {
+    color: rgb(255, 213, 88);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/*---------------------------------------футер---------------------------------------*/
+
+.footer {
+    display: block;
+    margin: auto;
+    min-height: 100px;
+    color: white;
+    max-width: 100%;
+    background: rgb(0, 0, 0);
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* стили для логотипа в футере */
+
+.logo1 {
+    width: 155px;
+    height: 65px;
+    background: url("../images/logo.png");
+    background-size: cover;
+}
+
+.logo1:hover {
+    background: url("../images/logo1.png");
+    background-size: cover;
+}
+
+
+/* стиль блока слева в футере */
+
+.block1 {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+}
+
+
+/* стиль заголовка 4 для блока слева в футере */
+
+.block1 h4 {
+    color: rgb(101, 101, 101);
+    padding-bottom: 5px;
+    font-size: 13pt;
+}
+
+
+/* стиль ссылок для блока слева в футере */
+
+.block1 a {
+    display: inline-block;
+    padding-top: 15px;
+    color: white;
+}
+
+.block1 a:hover {
+    color: rgb(119, 168, 194);
+}
+
+
+/* стили для правого блока с соц сетями футере */
+
+.block2 {
+    display: block;
+    float: right;
+    height: 100%;
+    width: 20vw;
+}
+
+
+/* стили для ссылок для правого блока в футере?? */
+
+.block2 a {
+    float: right;
+    margin-left: 30px;
+}
+
+
+/* стили для логотипа инстаграма в футере */
+
+#inst {
+    width: 3vw;
+    height: 3vw;
+    background: url("../images/inst.png");
+    background-size: cover;
+}
+
+#inst:hover {
+    background: url("../images/inst1.png");
+    background-size: cover;
+}
+
+
+/* стили для логотипа твиттера в футере */
+
+#twi {
+    width: 3vw;
+    height: 3vw;
+    background: url("../images/twi.png");
+    background-size: cover;
+}
+
+#twi:hover {
+    background: url("../images/twi1.png");
+    background-size: cover;
+}
+
+
+/* стили для логотипа фейсбука в футере */
+
+#faceb {
+    width: 3vw;
+    height: 3vw;
+    background: url("../images/faceb.png");
+    background-size: cover;
+}
+
+#faceb:hover {
+    background: url("../images/faceb1.png");
+    background-size: cover;
+}
+
+
+/* стили ссылок под левым и правым блоком в футере */
+
+.block3 {
+    display: inline-block;
+    margin-top: 70px;
+}
+
+.block3 a {
+    color: rgb(101, 101, 101);
+    margin-right: 45px;
+    font-size: 10pt;
+}
+
+.block3 a:hover {
+    color: rgb(119, 168, 194);
+}
+
+
+/* подпись?? */
+
+.block4 {
+    margin-top: 70px;
+    display: block;
+    float: right;
+}
+
+
+/*---------------------------------------регистрация и вход---------------------------------------*/
+
+
+/* стили для главного блока на стр регистрации и входа */
+
+.signup,
+.login {
+    display: block;
+    width: 610px;
+    min-height: 200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* стиль заголовка и верхней кнопки на стр регистрации */
+
+.signup h1,
+.faceb {
+    margin: 20px 0 35px 0;
+}
+
+
+/* стиль верхней кнопки на стр регистрации */
+
+.faceb {
+    font-weight: bold;
+    display: inline-block;
+    width: 400px;
+    padding: 15px;
+    border-radius: 60px;
+    color: white;
+    background: rgb(82, 167, 213);
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+}
+
+.faceb:hover {
+    background: rgb(118, 195, 237);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+
+/* стиль логотипа на стр регистрации и входа */
+
+.logo2 {
+    display: inline-block;
+    width: 155px;
+    height: 65px;
+    background: url("../images/logo2.png");
+    background-size: cover;
+}
+
+.logo2:hover {
+    background: url("../images/logo1.png");
+    background-size: cover;
+}
+
+
+/* стиль гор линии на стр регистрации и входа */
+
+.line {
+    text-align: center;
+    color: rgb(150, 150, 150);
+}
+
+.line hr {
+    display: inline-block;
+    border-top: 1px solid rgb(204, 204, 204);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+}
+
+
+/* стиль формы на стр регистрации и входа */
+
+form {
+    display: block;
+    min-height: 200px;
+    padding: 15px;
+}
+
+
+/* стиль 3 заголовка в форме на стр регистрации и входа */
+
+form>h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* подпись под полем ввода имени на стр регистрации */
+
+.name {
+    font-size: 10pt;
+}
+
+
+/* стиль для лейбла первой группы и 4 заголовка во второй и третьей группе*/
+
+.group1 label,
+h4 {
+    font-size: 10pt;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* стиль текстового поля ввода */
+
+input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    border: solid 1px gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=text]:hover {
+    border: solid 1px rgb(30, 30, 30);
+}
+
+
+/* стиль плейсхолдера текстового поля ввода */
+
+::placeholder {
+    font-family: "Century Gothic";
+    font-size: 11pt;
+}
+
+
+/* стиль второй группы с др */
+
+.group2 {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* выравнивание по левому краю заголовков и лейблов?? */
+
+.group2 h4,
+.group1,
+.group3 {
+    text-align: left;
+}
+
+
+/* стиль лейбла во второй группе */
+
+.group2 label {
+    font-size: 11pt;
+}
+
+
+/* стиль для дня месяца и гора рождения */
+
+.field1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 20px 0 10px 0;
+}
+
+
+/* стиль выпадающего списка месяцев */
+
+select,
+option {
+    margin: 10px 0 0 0;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Century Gothic";
+    font-size: 11pt;
+    width: 100%;
+    height: 50px;
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+
+select:hover,
+option:hover {
+    border: solid 1px rgb(30, 30, 30);
+}
+
+
+/* стиль блока для выбора пола */
+
+.field2 {
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+
+/* стили других остальных тыкалок поф */
+
+.field3 {
+    text-align: left;
+    margin: 15px 0 15px 0;
+}
+
+
+/* стиль ссылок */
+
+.field3 a,
+.group4 a,
+.forgot {
+    color: rgb(206, 143, 5);
+    text-decoration: underline;
+}
+
+.field3 a:hover,
+.group4 a:hover,
+.forgot:hover {
+    color: rgb(239, 172, 28);
+}
+
+
+/* стили радио кнопки и чекбокса */
+
+input[type=radio],
+input[type=checkbox] {
+    margin: 0 10px 0 0;
+}
+
+
+/* стили для выбора пола ?? */
+
+.gender {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 150px;
+}
+
+
+/* стили для текста под кнопкой */
+
+.group4,
+.group4 p {
+    display: block;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+/* стиль кнопки на стр регистрации */
+
+.reg,
+.log {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 15px;
+    width: 300px;
+    border: none;
+    border-radius: 60px;
+    background: rgb(255, 201, 41);
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+.reg:hover,
+.log:hover {
+    background: rgb(255, 211, 81);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+
+/* кнопки входа через разные сервисы(?) на стр входа */
+
+.login-1,
+.login-2,
+.login-3 {
+    display: inline-block;
+    width: 95%;
+    padding: 15px;
+    background: red;
+    margin: 10px 0 10px 0;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 13pt;
+    letter-spacing: 2px;
+}
+
+
+/* стиль кнопки входа через фб на стр входа */
+
+.login-1 {
+    color: white;
+    background: #3b5998;
+}
+
+.login-1:hover {
+    background: #4064b3;
+}
+
+
+/* стиль кнопки входа через епл на стр входа */
+
+.login-2 {
+    color: white;
+    background: black;
+}
+
+.login-2:hover {
+    background: rgb(43, 43, 43);
+}
+
+
+/* стиль кнопки входа через гугел на стр входа */
+
+.login-3 {
+    color: #616467;
+    background: white;
+    box-shadow: inset 0 0 0 2px #616467;
+}
+
+.login-3:hover {
+    background: #616467;
+    color: white;
+}
+
+
+/* стиль кнопки входа на стр входа */
+
+.log {
+    margin: 20px 0 0 28px;
+}
+
+
+/* стиль чекбокса запомнить меня на стр входа */
+
+#remember {
+    margin: 20px 28px 0 0;
+}
+
+
+/* стиль гор линии на стр входа */
+
+.login>hr {
+    text-align: center;
+    display: inline-block;
+    border-top: 1px solid rgb(204, 204, 204);
+    margin: 10px;
+    width: 95%;
+}
+
+
+/* стиль 3 заголовка на стр входа */
+
+.login h3 {
+    font-size: 13pt;
+}
+
+
+/* стиль 3 заголовка у кнопки на стр входа которая кидает на стр регистрации */
+
+.no-acc h3 {
+    font-size: 15pt;
+    color: rgb(36, 36, 36);
+}
+
+.logo,
+.logo1,
+.logo2 {
+    cursor: default;
+}
+
+/* стиль таблиц для трех пхпшных страниц */
+
+.flex{
+    display: flex;
+}
